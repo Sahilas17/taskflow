@@ -1,0 +1,8 @@
+[build]
+buildCommand = "npm run build"
+
+[deploy]
+startCommand = "cd backend && node server.js"
+
+[build.variables]
+RAILPACK_INSTALL_CMD = "npm install && cd backend && npm install && cd ../frontend && npm install"
